@@ -1,10 +1,15 @@
-import { Button } from '@/components/ui/button'
+import Link from 'next/link'
+
+import { Button } from '@/components/shared/ui/button'
 
 export default function Home() {
   return (
     <div>
-      <p className="font-secondary text-2xl">Hello world</p>
-      <Button>hello</Button>
+      <Button asChild>
+        <Link href="/app/customers" prefetch={false}>
+          /app/customers
+        </Link>
+      </Button>
     </div>
   )
 }
