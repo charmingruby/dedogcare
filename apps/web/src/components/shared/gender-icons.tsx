@@ -13,7 +13,7 @@ export function MaleIcon({ className }: GenderIconProps) {
     <Image
       src={maleIcon}
       alt="Male icon"
-      className={cn('h-6 w-6', className)}
+      className={cn('h-5 w-5', className)}
     />
   )
 }
@@ -23,7 +23,7 @@ export function FemaleIcon({ className }: GenderIconProps) {
     <Image
       src={femaleIcon}
       alt="Female icon"
-      className={cn('h-6 w-6', className)}
+      className={cn('h-5 w-5', className)}
     />
   )
 }
