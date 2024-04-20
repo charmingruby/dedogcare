@@ -1,7 +1,7 @@
 import '@/styles/globals.css'
 
 import type { Metadata } from 'next'
-import { Acme as FontSecondary, Inter as FontSans } from 'next/font/google'
+import { Inter as FontSans, Mooli as FontSecondary } from 'next/font/google'
 
 import { cn } from '@/libs/tw-merge'
 
@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          'min-h-screen bg-background font-sans antialiased',
+          'min-h-screen bg-background font-sans text-foreground antialiased',
           fontSans.variable,
           fontSecondary.variable,
         )}
