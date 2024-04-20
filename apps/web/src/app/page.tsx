@@ -6,8 +6,14 @@ export default function Home() {
   return (
     <div>
       <Button asChild>
-        <Link href="/app/customers" prefetch={false}>
-          /app/customers
+        <Link href="/pet/register" prefetch={false}>
+          /pet/register
+        </Link>
+      </Button>
+
+      <Button asChild>
+        <Link href="/pet/register/pet-image" prefetch={false}>
+          /pet/register/pet-image
         </Link>
       </Button>
     </div>

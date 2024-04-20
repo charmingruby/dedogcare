@@ -1,11 +1,9 @@
-interface FormHeadingProps {
-  heading: string
-}
+import { PropsWithChildren } from 'react'
 
-export function FormHeading({ heading }: FormHeadingProps) {
+export function FormHeading({ children }: PropsWithChildren) {
   return (
     <h2 className="font-secondary text-2xl">
-      <strong>{heading}</strong>
+      <strong>{children}</strong>
     </h2>
   )
 }
