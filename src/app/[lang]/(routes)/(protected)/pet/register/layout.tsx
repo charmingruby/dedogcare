@@ -1,11 +1,11 @@
 import { PropsWithChildren } from 'react'
 
-import { MaxWidthWrapper } from '@/components/shared/max-width-wrapper'
+import { PetRegisterContainer } from '@/components/modules/pet/register/container'
 
 export default function PetRegisterLayout({ children }: PropsWithChildren) {
   return (
-    <MaxWidthWrapper>
+    <PetRegisterContainer>
       <div className="pt-8">{children}</div>
-    </MaxWidthWrapper>
+    </PetRegisterContainer>
   )
 }

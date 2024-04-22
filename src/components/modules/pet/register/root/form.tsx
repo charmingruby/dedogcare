@@ -1,6 +1,5 @@
 'use client'
 
-import { SelectItem, SelectValue } from '@radix-ui/react-select'
 import { CalendarIcon } from 'lucide-react'
 import Link from 'next/link'
 
@@ -25,8 +24,10 @@ import {
   Select,
   SelectContent,
   SelectGroup,
+  SelectItem,
   SelectLabel,
   SelectTrigger,
+  SelectValue,
 } from '@/components/shared/ui/select'
 import { Separator } from '@/components/shared/ui/separator'
 import { LanguageProps } from '@/i18n'

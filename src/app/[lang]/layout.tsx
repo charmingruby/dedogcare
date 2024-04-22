@@ -1,7 +1,7 @@
 import '@/styles/globals.css'
 
 import type { Metadata } from 'next'
-import { Inter as FontSans, Mooli as FontSecondary } from 'next/font/google'
+import { Inter as FontSans, Rowdies as FontSecondary } from 'next/font/google'
 
 import { i18n } from '@/i18n'
 import { cn } from '@/libs/tw-merge'
@@ -13,7 +13,7 @@ const fontSans = FontSans({
 
 const fontSecondary = FontSecondary({
   subsets: ['latin'],
-  weight: ['400'],
+  weight: ['400', '300', '700'],
   variable: '--font-secondary',
 })
 

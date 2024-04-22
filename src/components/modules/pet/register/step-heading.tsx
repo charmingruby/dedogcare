@@ -13,7 +13,7 @@ export function PetRegisterStepHeading({
 }: PetRegisterStepHeadingProps) {
   return (
     <div className="flex items-center gap-2">
-      <Icon className="text-primary" />
+      <Icon className="mb-1 h-7 w-7 text-primary" />
       <FormHeading>{heading}</FormHeading>
     </div>
   )

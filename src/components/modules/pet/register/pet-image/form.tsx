@@ -26,7 +26,7 @@ export function PetRegisterImageForm() {
         </CardHeader>
 
         {/* Input Frame */}
-        <div className="mt-4 flex h-40 w-full flex-col items-center justify-center gap-4 rounded-md border border-dashed">
+        <div className="mt-4 flex h-48 w-full flex-col items-center justify-center gap-4 rounded-md border border-dashed">
           <AddDogImageFrame />
 
           <div className="flex flex-col gap-1 text-center">
