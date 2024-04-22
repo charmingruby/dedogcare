@@ -16,6 +16,12 @@ export default function Home() {
           /pet/register/pet-image
         </Link>
       </Button>
+
+      <Button asChild>
+        <Link href="/app/customers" prefetch={false}>
+          /app/customers
+        </Link>
+      </Button>
     </div>
   )
 }

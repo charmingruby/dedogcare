@@ -7,7 +7,7 @@ import * as React from 'react'
 import { cn } from '@/libs/tw-merge'
 
 const labelVariants = cva(
-  'text-lg font-semibold font-secondary leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70',
+  'text-lg font-semibold font-sans leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70',
 )
 
 const Label = React.forwardRef<
