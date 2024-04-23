@@ -1,9 +1,10 @@
 import Image from 'next/image'
 
 import banner from '@/assets/hero-banner.png'
+
 export default function Home() {
   return (
-    <div className="relative h-screen bg-red-500">
+    <div className="relative h-screen">
       <Image
         src={banner}
         alt="Happy dog working with us"
@@ -11,7 +12,7 @@ export default function Home() {
       />
 
       {/* Filter */}
-      <div className="absolute h-full w-full bg-black/50 object-fill" />
+      <div className="absolute z-0 h-full w-full bg-black/50 object-fill" />
     </div>
   )
 }
