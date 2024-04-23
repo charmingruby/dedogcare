@@ -30,13 +30,9 @@ import {
   SelectValue,
 } from '@/components/shared/ui/select'
 import { Separator } from '@/components/shared/ui/separator'
-import { LanguageProps } from '@/i18n'
-import { getDictionaryServerOnly } from '@/i18n/dictionary-server-only'
 import { cn } from '@/libs/tw-merge'
 
-export function PetRegisterRootForm({ lang }: LanguageProps) {
-  const dict = getDictionaryServerOnly(lang)
-
+export function PetRegisterRootForm() {
   return (
     <Card className="mt-8">
       <CardHeader className="p-0 pt-6" />
@@ -155,7 +151,7 @@ export function PetRegisterRootForm({ lang }: LanguageProps) {
 
           <Button className="w-full gap-1" size="lg" asChild>
             <Link prefetch={false} href="/pet/register/pet-image">
-              {dict.petRegisterStep1.saveButton}
+              Save
             </Link>
           </Button>
         </div>

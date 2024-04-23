@@ -1,11 +1,17 @@
 import { PropsWithChildren } from 'react'
 
 import { PublicHeader } from '@/components/layouts/public/header'
+import { LanguageRootProps } from '@/i18n'
 
-export default function PublicLayout({ children }: PropsWithChildren) {
+type PublicLayoutProps = PropsWithChildren & LanguageRootProps
+
+export default function PublicLayout({
+  children,
+  params: { lang },
+}: PublicLayoutProps) {
   return (
     <div>
-      <PublicHeader />
+      <PublicHeader lang={lang} />
 
       <div>{children}</div>
     </div>

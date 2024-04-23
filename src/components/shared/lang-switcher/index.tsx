@@ -20,7 +20,24 @@ function LangLabel({ children }: PropsWithChildren) {
 
 export function LangSwitcher() {
   const pathname = usePathname()
-  const urlLang = pathname.substring(1)
+  const routeParams = pathname.split('/')
+  const urlLang = routeParams[1]
+
+  function newUrlOnLangChange(newLang: string) {
+    const rawUrlParams = routeParams.slice(2)
+
+    const baseUrl = `/${newLang}`
+
+    const initialUrl = ''
+    const urlParams = rawUrlParams.reduce(
+      (acc, currentValue) => '/' + currentValue,
+      initialUrl,
+    )
+
+    const newUrl = baseUrl + urlParams
+
+    return newUrl
+  }
 
   const [currentLang, setCurrentLang] = useState<string>(urlLang)
   const transition = useTransition()
@@ -29,10 +46,11 @@ export function LangSwitcher() {
   const router = useRouter()
 
   const onLangChange = (lang: string) => {
-    console.log(lang)
     setCurrentLang(lang)
+    const url = newUrlOnLangChange(lang)
+
     startTransition(() => {
-      router.replace(`/${lang}`)
+      router.replace(url)
       router.refresh()
     })
   }
