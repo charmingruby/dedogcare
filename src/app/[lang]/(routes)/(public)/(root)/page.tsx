@@ -1,4 +1,4 @@
-import { Crown, Heart } from 'lucide-react'
+import { Crown, Heart, PawPrint } from 'lucide-react'
 import Image from 'next/image'
 
 import heroDog from '@/assets/dog-cartoons/home-hero.png'
@@ -36,10 +36,11 @@ export default function Home() {
             </p>
 
             <div className="mt-6 flex items-center gap-4">
-              <Button size="lg" variant="defaultSecondary">
-                Nao sei
+              <Button size="lg" variant="defaultSecondary" className="gap-1">
+                Schedule
+                <PawPrint className="h-4 w-4" />
               </Button>
-              <Button size="lg">Nao sei</Button>
+              <Button size="lg">Contact</Button>
             </div>
           </div>
 
@@ -66,7 +67,7 @@ export default function Home() {
           <ContentHeading>
             Give your{' '}
             <span className="relative inline-flex">
-              dog
+              Dog
               <Crown className="absolute -top-3 left-0 h-4 w-4 fill-yellow-500 text-yellow-500" />
             </span>{' '}
             a king day
