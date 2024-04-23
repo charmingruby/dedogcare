@@ -4,11 +4,8 @@ import { PetRegisterMultistep } from '@/components/modules/pet/register/multiste
 import { PetRegisterRootForm } from '@/components/modules/pet/register/root/form'
 import { PetRegisterStepHeading } from '@/components/modules/pet/register/step-heading'
 import { ReturnLink } from '@/components/shared/return-link'
-import { LanguageRootProps } from '@/i18n'
 
-export default function PetRegisterRoot({
-  params: { lang },
-}: LanguageRootProps) {
+export default function PetRegisterRoot() {
   return (
     <div>
       <ReturnLink to="home" url="/" />
@@ -16,7 +13,7 @@ export default function PetRegisterRoot({
       <div className="mt-4">
         <PetRegisterStepHeading icon={PawPrint} heading="Add a Pet" />
         <PetRegisterMultistep step={1} />
-        <PetRegisterRootForm lang={lang} />
+        <PetRegisterRootForm />
       </div>
     </div>
   )

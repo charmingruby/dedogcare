@@ -1,5 +1,5 @@
-import { LanguageProps } from '@/i18n'
-import { getDictionaryServerOnly } from '@/i18n/dictionary-server-only'
+import { LanguageProps } from '@/libs/i18n'
+import { getDictionaryServerOnly } from '@/libs/i18n/dictionary-server-only'
 
 import { NavItem } from './nav-item'
 

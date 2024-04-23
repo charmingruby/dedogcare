@@ -1,6 +1,6 @@
 'use client'
 
-import { CalendarIcon } from 'lucide-react'
+import { CalendarIcon, Trash } from 'lucide-react'
 import Link from 'next/link'
 
 import { FemaleIcon, MaleIcon } from '@/components/shared/gender-icons'
@@ -145,8 +145,13 @@ export function PetRegisterRootForm() {
 
       <CardFooter>
         <div className="mt-8 flex w-full items-center gap-4">
-          <Button variant="defaultSecondary" className="w-full" size="lg">
-            Cancel
+          <Button
+            variant="outline"
+            className="flex w-full items-center gap-1 text-destructive hover:bg-destructive hover:text-background"
+            size="lg"
+          >
+            <span>Cancel</span>
+            <Trash className="h-4 w-4" />
           </Button>
 
           <Button className="w-full gap-1" size="lg" asChild>

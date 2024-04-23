@@ -2,8 +2,8 @@ import { PawPrint } from 'lucide-react'
 import Link from 'next/link'
 
 import { Button } from '@/components/shared/ui/button'
-import { LanguageProps } from '@/i18n'
-import { getDictionaryServerOnly } from '@/i18n/dictionary-server-only'
+import { LanguageProps } from '@/libs/i18n'
+import { getDictionaryServerOnly } from '@/libs/i18n/dictionary-server-only'
 
 export function ActionButton({ lang }: LanguageProps) {
   const { publicScheduleButton } = getDictionaryServerOnly(lang)

@@ -1,7 +1,7 @@
 import { PropsWithChildren } from 'react'
 
 import { PublicHeader } from '@/components/layouts/public/header'
-import { LanguageRootProps } from '@/i18n'
+import { LanguageRootProps } from '@/libs/i18n'
 
 type PublicLayoutProps = PropsWithChildren & LanguageRootProps
 

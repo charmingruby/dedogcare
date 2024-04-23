@@ -1,6 +1,6 @@
 import { LangSwitcher } from '@/components/shared/lang-switcher'
 import { MaxWidthWrapper } from '@/components/shared/max-width-wrapper'
-import { LanguageProps } from '@/i18n'
+import { LanguageProps } from '@/libs/i18n'
 
 import { ActionButton } from './action-button'
 import { BrandLogo } from './brand-logo'

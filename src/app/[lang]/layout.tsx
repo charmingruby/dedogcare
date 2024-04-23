@@ -3,7 +3,7 @@ import '@/styles/globals.css'
 import type { Metadata } from 'next'
 import { Inter as FontSans, Rowdies as FontSecondary } from 'next/font/google'
 
-import { i18n } from '@/i18n'
+import { i18n } from '@/libs/i18n'
 import { cn } from '@/libs/tw-merge'
 
 const fontSans = FontSans({
