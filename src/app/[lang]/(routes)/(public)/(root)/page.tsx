@@ -2,6 +2,7 @@ import { Crown, Heart } from 'lucide-react'
 import Image from 'next/image'
 
 import heroDog from '@/assets/dog-cartoons/home-hero.png'
+import { LandingPageUSPList } from '@/components/modules/landing-page/usp/list'
 // import banner from '@/assets/hero-banner.png'
 import { MaxWidthWrapper } from '@/components/shared/max-width-wrapper'
 import { Button } from '@/components/shared/ui/button'
@@ -61,27 +62,28 @@ export default function Home() {
 
       {/* USP */}
       <div>
-        <MaxWidthWrapper className="py-16">
+        <MaxWidthWrapper className="space-y-8 py-16">
           {/* Heading */}
-          <div>
+          <div className="text-center">
             <ContentHeading>
               Give your{' '}
               <span className="relative inline-flex">
                 Dog
-                <Crown className="absolute -top-3.5 left-0 h-5 w-5 fill-yellow-500 text-yellow-500" />
+                <Crown className="absolute -top-3 left-0 h-4 w-4 fill-yellow-500 text-yellow-500" />
               </span>{' '}
               a princess day
             </ContentHeading>
           </div>
 
           {/* Content */}
-          <div></div>
+          <LandingPageUSPList />
         </MaxWidthWrapper>
       </div>
 
       {/* Services */}
 
       {/* How it works */}
+      <div className="bg-primary">k</div>
 
       {/* Location */}
     </>

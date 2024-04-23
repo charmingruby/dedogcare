@@ -9,7 +9,7 @@ interface ContentHeadingProps {
 
 export function ContentHeading({ children, className }: ContentHeadingProps) {
   return (
-    <h2 className={cn('font-secondary text-5xl font-semibold', className)}>
+    <h2 className={cn('font-secondary text-4xl font-medium', className)}>
       {children}
     </h2>
   )
