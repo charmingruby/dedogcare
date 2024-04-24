@@ -3,11 +3,11 @@ import Image from 'next/image'
 
 import heroDog from '@/assets/dog-cartoons/home-hero.png'
 import { LandingPageMVV } from '@/components/modules/landing-page/mvv'
+import { LandingPageServicesTabs } from '@/components/modules/landing-page/services/tabs'
 import { LandingPageUSPList } from '@/components/modules/landing-page/usp/list'
 import { MaxWidthWrapper } from '@/components/shared/max-width-wrapper'
 import { Button } from '@/components/shared/ui/button'
 import { ContentHeading } from '@/components/shared/ui/content-heading'
-import { ContentParagraph } from '@/components/shared/ui/content-paragraph'
 
 export default function Home() {
   return (
@@ -79,28 +79,24 @@ export default function Home() {
       </MaxWidthWrapper>
 
       {/* Services */}
-      <MaxWidthWrapper className="py-16">
-        {/* Heading */}
-        <ContentHeading>All the comfort your dog deserves</ContentHeading>
-        <ContentParagraph>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-          nostrum sunt omnis consequatur quod molestias soluta necessitatibus
-          reiciendis laboriosam facere, fugit possimus similique delectus saepe?
-          Beatae, libero. Maiores, aliquid tempore.
-        </ContentParagraph>
-        <ContentParagraph>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-          nostrum sunt omnis consequatur quod molestias soluta necessitatibus
-          reiciendis laboriosam facere, fugit possimus similique delectus saepe?
-          Beatae, libero. Maiores, aliquid tempore.
-        </ContentParagraph>
+      <MaxWidthWrapper className="flex flex-col gap-8 py-16">
+        {/* Introduction */}
+        <div>
+          <ContentHeading>Our Services</ContentHeading>
+        </div>
+
+        {/* Steps */}
+        <div className="w-full">
+          <LandingPageServicesTabs />
+        </div>
       </MaxWidthWrapper>
 
       {/* How it works */}
-      <div className="bg-primary">how it works</div>
+      <div className="border-y bg-primary py-16"></div>
 
       {/* Customers */}
       <div>customer</div>
+
       {/* Contact */}
       <div>contact</div>
 
