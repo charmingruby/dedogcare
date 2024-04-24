@@ -1,4 +1,4 @@
-import { School } from 'lucide-react'
+import { MoonStar, PawPrint, School, Sun } from 'lucide-react'
 
 import { TabsList } from '@/components/shared/ui/tabs'
 
@@ -14,6 +14,12 @@ export function ServicesTabNavigation({
   return (
     <TabsList className="grid h-fit w-full grid-cols-4 gap-2">
       <ServiceTabTrigger
+        value="stay"
+        icon={Sun}
+        label="Stay"
+        currentTab={currentTab}
+      />
+      <ServiceTabTrigger
         value="nursery"
         icon={School}
         label="Nursery"
@@ -21,19 +27,13 @@ export function ServicesTabNavigation({
       />
       <ServiceTabTrigger
         value="overnight"
-        icon={School}
+        icon={MoonStar}
         label="Overnight"
         currentTab={currentTab}
       />
       <ServiceTabTrigger
-        value="stay"
-        icon={School}
-        label="Stay"
-        currentTab={currentTab}
-      />
-      <ServiceTabTrigger
         value="dog-walk"
-        icon={School}
+        icon={PawPrint}
         label="Dog Walk"
         currentTab={currentTab}
       />

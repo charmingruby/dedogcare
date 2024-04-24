@@ -1,5 +1,6 @@
 import { PropsWithChildren } from 'react'
 
+import { PublicFooter } from '@/components/layouts/public/footer'
 import { PublicHeader } from '@/components/layouts/public/header'
 import { LanguageRootProps } from '@/libs/i18n'
 
@@ -12,8 +13,8 @@ export default function PublicLayout({
   return (
     <div>
       <PublicHeader lang={lang} />
-
       <div>{children}</div>
+      <PublicFooter />
     </div>
   )
 }

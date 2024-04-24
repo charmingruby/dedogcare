@@ -2,6 +2,8 @@ import { Crown, Heart, PawPrint } from 'lucide-react'
 import Image from 'next/image'
 
 import heroDog from '@/assets/dog-cartoons/home-hero.png'
+import guideUser from '@/assets/guide/user-action.svg'
+import { LandingPageGuideSteps } from '@/components/modules/landing-page/guide/steps'
 import { LandingPageMVV } from '@/components/modules/landing-page/mvv'
 import { LandingPageServicesTabs } from '@/components/modules/landing-page/services/tabs'
 import { LandingPageUSPList } from '@/components/modules/landing-page/usp/list'
@@ -91,17 +93,33 @@ export default function Home() {
         </div>
       </MaxWidthWrapper>
 
-      {/* How it works */}
-      <div className="border-y bg-primary py-16"></div>
+      {/* Guide */}
+      <div className="border-y bg-primary py-16">
+        <MaxWidthWrapper className="grid grid-cols-2 gap-8">
+          <div>
+            <Image
+              src={guideUser}
+              alt="Customer using app"
+              className="h-72 w-72"
+            />
+          </div>
+
+          <div>
+            <LandingPageGuideSteps />
+          </div>
+        </MaxWidthWrapper>
+      </div>
 
       {/* Customers */}
-      <div>customer</div>
+      <MaxWidthWrapper className="py-16">customers</MaxWidthWrapper>
 
-      {/* Contact */}
-      <div>contact</div>
+      {/* Location */}
+      <MaxWidthWrapper className="py-16">location</MaxWidthWrapper>
 
       {/* CTA */}
-      <div>cta</div>
+      <div className="border-t bg-gray-50 py-16">
+        <MaxWidthWrapper>cta</MaxWidthWrapper>
+      </div>
     </>
   )
 }

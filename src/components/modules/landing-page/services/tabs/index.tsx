@@ -2,13 +2,13 @@
 
 import { useState } from 'react'
 
-import { Card, CardHeader } from '@/components/shared/ui/card'
-import { Tabs, TabsContent } from '@/components/shared/ui/tabs'
+import { Tabs } from '@/components/shared/ui/tabs'
 
+import { ServiceTabsContents } from './tab-contents'
 import { ServicesTabNavigation } from './tab-navigation'
 
 export function LandingPageServicesTabs() {
-  const defaultServiceValue = 'account'
+  const defaultServiceValue = 'stay'
 
   const [currentTab, setCurrentTab] = useState<string>(defaultServiceValue)
 
@@ -23,11 +23,7 @@ export function LandingPageServicesTabs() {
       className="w-full space-y-4"
     >
       <ServicesTabNavigation currentTab={currentTab} />
-      <TabsContent value="nursery">
-        <Card>
-          <CardHeader>nursery</CardHeader>
-        </Card>
-      </TabsContent>
+      <ServiceTabsContents />
     </Tabs>
   )
 }
