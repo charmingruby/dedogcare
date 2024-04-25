@@ -12,7 +12,7 @@ export function ServicesTabNavigation({
   currentTab,
 }: ServicesTabNavigationProps) {
   return (
-    <TabsList className="grid h-fit w-full grid-cols-4 gap-2">
+    <TabsList className="grid h-fit w-full grid-cols-4 gap-2 border">
       <ServiceTabTrigger
         value="stay"
         icon={Sun}
