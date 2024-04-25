@@ -19,7 +19,11 @@ export function LandingPageGuideSteps() {
               <span className="font-secondary text-primary-foreground">1</span>
             </div>
           </div>
-          <div className="pl-12 pt-2">
+          <div className="space-y-2 pl-12 pt-2">
+            <span className="font-secondary text-xl font-semibold text-background">
+              Title
+            </span>
+
             <div className="leading-relaxed text-primary-foreground">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
               perspiciatis nesciunt saepe odit esse omnis hic, beatae impedit
@@ -37,7 +41,11 @@ export function LandingPageGuideSteps() {
               <span className="font-secondary text-primary-foreground">2</span>
             </div>
           </div>
-          <div className="pl-12 pt-2">
+          <div className="space-y-2 pl-12 pt-2">
+            <span className="font-secondary text-xl font-semibold text-background">
+              Title
+            </span>
+
             <div className="leading-relaxed text-primary-foreground">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
               perspiciatis nesciunt saepe odit esse omnis hic, beatae impedit
@@ -55,7 +63,11 @@ export function LandingPageGuideSteps() {
               <span className="font-secondary text-primary-foreground">3</span>
             </div>
           </div>
-          <div className="pl-12 pt-2">
+          <div className="space-y-2 pl-12 pt-2">
+            <span className="font-secondary text-xl font-semibold text-background">
+              Title
+            </span>
+
             <div className="leading-relaxed text-primary-foreground">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
               perspiciatis nesciunt saepe odit esse omnis hic, beatae impedit

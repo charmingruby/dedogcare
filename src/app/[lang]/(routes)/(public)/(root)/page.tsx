@@ -1,7 +1,9 @@
 import { Crown, Heart, PawPrint } from 'lucide-react'
 import Image from 'next/image'
 
+import ctaDog from '@/assets/cta/dog-sleeping.jpg'
 import heroDog from '@/assets/dog-cartoons/home-hero.png'
+import { LandingPageDepositions } from '@/components/modules/landing-page/depositions'
 import { LandingPageGuideMobileSchedulingIllustration } from '@/components/modules/landing-page/guide/mobile-scheduling-illustration'
 import { LandingPageGuideSteps } from '@/components/modules/landing-page/guide/steps'
 import { LandingPageMVV } from '@/components/modules/landing-page/mvv'
@@ -10,6 +12,7 @@ import { LandingPageUSPList } from '@/components/modules/landing-page/usp/list'
 import { MaxWidthWrapper } from '@/components/shared/max-width-wrapper'
 import { Button } from '@/components/shared/ui/button'
 import { ContentHeading } from '@/components/shared/ui/content-heading'
+import { ContentParagraph } from '@/components/shared/ui/content-paragraph'
 
 export default function Home() {
   return (
@@ -22,7 +25,7 @@ export default function Home() {
               Let us take{' '}
               <span className="relative inline-flex">
                 care{' '}
-                <Heart className="absolute -right-2 top-2 h-4 w-4 fill-red-500 text-red-500" />
+                <Heart className="absolute -right-2 top-2 h-4 w-4 fill-primary text-primary" />
               </span>{' '}
               of your{' '}
               <span className="underline decoration-primary decoration-dashed">
@@ -106,15 +109,47 @@ export default function Home() {
         </MaxWidthWrapper>
       </div>
 
-      {/* Customers */}
-      <MaxWidthWrapper className="py-16">customers</MaxWidthWrapper>
+      {/* Depositions */}
+      <MaxWidthWrapper className="py-16">
+        <LandingPageDepositions />
+      </MaxWidthWrapper>
 
       {/* Location */}
       <MaxWidthWrapper className="py-16">location</MaxWidthWrapper>
 
       {/* CTA */}
-      <div className="border-t bg-gray-50 py-16">
-        <MaxWidthWrapper>cta</MaxWidthWrapper>
+      <div className="relative border-t bg-gray-50">
+        {/* Cover img */}
+        <Image
+          src={ctaDog}
+          alt="Dogs running"
+          className="absolute h-full w-full object-cover object-bottom"
+        />
+
+        {/* Content */}
+        <MaxWidthWrapper className="relative z-10 pb-72 pt-16">
+          <div className="mx-auto max-w-3xl text-center">
+            <div className="flex items-center justify-center gap-1">
+              <ContentHeading>Let us help your dog</ContentHeading>
+              <Heart className="h-5 w-5 fill-primary text-primary" />
+            </div>
+
+            <ContentParagraph className="mt-8 text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
+              hic cum accusantium, ab ratione explicabo eveniet dolorum
+              accusamus saepe officia, maxime aspernatur sapiente error.
+            </ContentParagraph>
+
+            <div className="mt-4 flex items-center justify-center gap-4">
+              <Button size="lg" variant="defaultSecondary">
+                Contact
+              </Button>
+              <Button size="lg" className="flex items-center gap-1 text-base">
+                Schedule <PawPrint className="h-4 w-4" />
+              </Button>
+            </div>
+          </div>
+        </MaxWidthWrapper>
       </div>
     </>
   )
