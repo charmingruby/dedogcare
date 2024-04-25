@@ -27,7 +27,7 @@ export function StayTabContent() {
         </CardHeader>
 
         <CardContent>
-          <div className="space-y-6">
+          <div className="space-y-8">
             <div className="grid grid-cols-2 gap-8">
               <div className="space-y-6">
                 <div className="space-y-2">
@@ -47,16 +47,16 @@ export function StayTabContent() {
                 </div>
 
                 {/* Guarantees */}
-                <div className="space-y-2">
+                <div className="space-y-4">
                   {/* Heading */}
                   <div>
-                    <span className="font-secondary text-lg font-thin">
+                    <span className="font-secondary text-xl font-thin">
                       Guarantees
                     </span>
                   </div>
 
                   {/* List */}
-                  <div className="space-y-1.5">
+                  <div className="space-y-2">
                     <div className="flex items-center gap-1">
                       <div className="rounded-full bg-primary/20 p-0.5">
                         <Check
@@ -101,10 +101,10 @@ export function StayTabContent() {
             </div>
 
             {/* Pricing */}
-            <div className="space-y-2">
+            <div className="space-y-4">
               {/* Heading */}
               <div>
-                <span className="font-secondary text-lg font-thin">
+                <span className="font-secondary text-xl font-thin">
                   Pricing
                 </span>
               </div>

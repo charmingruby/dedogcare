@@ -2,7 +2,7 @@ import { Crown, Heart, PawPrint } from 'lucide-react'
 import Image from 'next/image'
 
 import heroDog from '@/assets/dog-cartoons/home-hero.png'
-import guideUser from '@/assets/guide/user-action.svg'
+import { LandingPageGuideMobileSchedulingIllustration } from '@/components/modules/landing-page/guide/mobile-scheduling-illustration'
 import { LandingPageGuideSteps } from '@/components/modules/landing-page/guide/steps'
 import { LandingPageMVV } from '@/components/modules/landing-page/mvv'
 import { LandingPageServicesTabs } from '@/components/modules/landing-page/services/tabs'
@@ -95,16 +95,12 @@ export default function Home() {
 
       {/* Guide */}
       <div className="border-y bg-primary py-16">
-        <MaxWidthWrapper className="grid grid-cols-2 gap-8">
-          <div>
-            <Image
-              src={guideUser}
-              alt="Customer using app"
-              className="h-72 w-72"
-            />
+        <MaxWidthWrapper className="grid grid-cols-3 gap-8">
+          <div className="flex items-center gap-8">
+            <LandingPageGuideMobileSchedulingIllustration />
           </div>
 
-          <div>
+          <div className="col-span-2">
             <LandingPageGuideSteps />
           </div>
         </MaxWidthWrapper>
