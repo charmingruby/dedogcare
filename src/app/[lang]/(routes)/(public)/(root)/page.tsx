@@ -112,17 +112,6 @@ export default function Home() {
         </MaxWidthWrapper>
       </div>
 
-      {/* Depositions */}
-      <MaxWidthWrapper className="space-y-8 py-16">
-        <div className="text-center">
-          <ContentHeading>Loved by dog owners</ContentHeading>
-        </div>
-
-        <div className="rounded-md border">
-          <LandingPageDepositions />
-        </div>
-      </MaxWidthWrapper>
-
       {/* Location */}
       <MaxWidthWrapper className="py-16">
         <div className="grid grid-cols-2 gap-8">
@@ -156,6 +145,17 @@ export default function Home() {
               <LandingPageLocationMosaic />
             </div>
           </div>
+        </div>
+      </MaxWidthWrapper>
+
+      {/* Depositions */}
+      <MaxWidthWrapper className="space-y-8 py-16">
+        <div className="text-center">
+          <ContentHeading>Loved by dog owners</ContentHeading>
+        </div>
+
+        <div className="rounded-md border">
+          <LandingPageDepositions />
         </div>
       </MaxWidthWrapper>
 
