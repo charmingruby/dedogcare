@@ -1,7 +1,7 @@
 import { PawPrint } from 'lucide-react'
 import Image from 'next/image'
 
-import guideUser from '@/assets/guide/user-action.svg'
+import guideUser from '@/assets/landing-page/guide/user-action.svg'
 
 export function LandingPageGuideMobileSchedulingIllustration() {
   return (

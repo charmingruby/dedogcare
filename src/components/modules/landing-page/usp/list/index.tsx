@@ -1,8 +1,8 @@
-import careIcon from '@/assets/usp-icons/care.svg'
-import companionIcon from '@/assets/usp-icons/companion.svg'
-import dogWalkIcon from '@/assets/usp-icons/dog-walk.svg'
-import foodIcon from '@/assets/usp-icons/food.svg'
-import healthIcon from '@/assets/usp-icons/health.svg'
+import careIcon from '@/assets/landing-page/usp/care.svg'
+import companionIcon from '@/assets/landing-page/usp/companion.svg'
+import dogWalkIcon from '@/assets/landing-page/usp/dog-walk.svg'
+import foodIcon from '@/assets/landing-page/usp/food.svg'
+import healthIcon from '@/assets/landing-page/usp/health.svg'
 
 import { USPListItem } from './item'
 

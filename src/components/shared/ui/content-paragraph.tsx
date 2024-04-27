@@ -10,5 +10,7 @@ export function ContentParagraph({
   children,
   className,
 }: ContentParagraphProps) {
-  return <p className={cn('leading-relaxed', className)}>{children}</p>
+  return (
+    <p className={cn('leading-relaxed text-gray-700', className)}>{children}</p>
+  )
 }

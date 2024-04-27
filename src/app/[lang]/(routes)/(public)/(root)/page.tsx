@@ -1,11 +1,14 @@
-import { Crown, Heart, PawPrint } from 'lucide-react'
+import { Crown, Heart, Mail, MapPin, PawPrint } from 'lucide-react'
 import Image from 'next/image'
 
-import ctaDog from '@/assets/cta/dog-sleeping.jpg'
-import heroDog from '@/assets/dog-cartoons/home-hero.png'
+import ctaDog from '@/assets/landing-page/cta/dog-sleeping.jpg'
+import heroDog from '@/assets/landing-page/hero/cartoon-dog.png'
+import coverLocationDog from '@/assets/landing-page/location/example-cover.jpg'
+import { LandingPageContactInfos } from '@/components/modules/landing-page/contact/infos'
 import { LandingPageDepositions } from '@/components/modules/landing-page/depositions'
 import { LandingPageGuideMobileSchedulingIllustration } from '@/components/modules/landing-page/guide/mobile-scheduling-illustration'
 import { LandingPageGuideSteps } from '@/components/modules/landing-page/guide/steps'
+import { LandingPageLocationMosaic } from '@/components/modules/landing-page/location/mosaic'
 import { LandingPageMVV } from '@/components/modules/landing-page/mvv'
 import { LandingPageServicesTabs } from '@/components/modules/landing-page/services/tabs'
 import { LandingPageUSPList } from '@/components/modules/landing-page/usp/list'
@@ -33,7 +36,7 @@ export default function Home() {
               </span>
             </h1>
 
-            <p className="mt-12 text-lg text-muted-foreground">
+            <p className="mt-12 text-lg text-gray-700">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
               impedit ipsa nostrum repellat pariatur laborum molestiae
               recusandae dolorum libero, illum ex saepe vero perferendis, esse
@@ -110,12 +113,73 @@ export default function Home() {
       </div>
 
       {/* Depositions */}
-      <MaxWidthWrapper className="py-16">
-        <LandingPageDepositions />
+      <MaxWidthWrapper className="space-y-8 py-16">
+        <div className="text-center">
+          <ContentHeading>Loved by dog owners</ContentHeading>
+        </div>
+
+        <div className="rounded-md border">
+          <LandingPageDepositions />
+        </div>
       </MaxWidthWrapper>
 
       {/* Location */}
-      <MaxWidthWrapper className="py-16">location</MaxWidthWrapper>
+      <MaxWidthWrapper className="py-16">
+        <div className="grid grid-cols-2 gap-8">
+          {/* Image */}
+          <div className="w-full rounded-md border p-2">
+            <Image
+              src={coverLocationDog}
+              alt="Dog headers"
+              className=" rounded-md"
+            />
+          </div>
+
+          {/* Content */}
+          <div className="space-y-8">
+            {/* Heading */}
+            <div className="space-y-4">
+              <div className="flex items-center gap-2">
+                <MapPin className="h-7 w-7 text-primary" />
+                <ContentHeading>Our space</ContentHeading>
+              </div>
+
+              <ContentParagraph>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
+                alias doloribus quibusdam. Libero non fugit dolorum voluptates
+                temporibus quidem porro deleniti, odit corrupti, iste sunt
+                inventore. Sint accusantium accusamus laborum?
+              </ContentParagraph>
+            </div>
+
+            <div>
+              <LandingPageLocationMosaic />
+            </div>
+          </div>
+        </div>
+      </MaxWidthWrapper>
+
+      {/* Contact */}
+      <MaxWidthWrapper className="relative space-y-8 border-t py-16">
+        {/* Content */}
+        <div className="space-y-4">
+          <div className="flex items-center gap-2">
+            <Mail className="h-7 w-7 text-primary" />
+            <ContentHeading>Let{"'"}s chat</ContentHeading>
+          </div>
+
+          <ContentParagraph>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex
+            reprehenderit ad tempora minus neque quibusdam vero delectus odit
+            doloremque ullam! Est neque doloremque ad beatae officia autem
+            molestiae. Aliquam, magni.
+          </ContentParagraph>
+        </div>
+
+        <div>
+          <LandingPageContactInfos />
+        </div>
+      </MaxWidthWrapper>
 
       {/* CTA */}
       <div className="relative border-t bg-gray-50">
@@ -134,7 +198,7 @@ export default function Home() {
               <Heart className="h-5 w-5 fill-primary text-primary" />
             </div>
 
-            <ContentParagraph className="mt-8 text-gray-700">
+            <ContentParagraph className="mt-8">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
               hic cum accusantium, ab ratione explicabo eveniet dolorum
               accusamus saepe officia, maxime aspernatur sapiente error.

@@ -1,7 +1,7 @@
 import { Check, Heart, Sun } from 'lucide-react'
 import Image from 'next/image'
 
-import stayTabImage from '@/assets/services/stay.jpg'
+import stayTabImage from '@/assets/landing-page/services/stay.jpg'
 import { Button } from '@/components/shared/ui/button'
 import {
   Card,
